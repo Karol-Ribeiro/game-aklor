@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Desvende o Dígito </title>
+</head>
+<body id="body2">
+
+
+
+    <div id="body_popUp">
+        <!--     POP-UP    --> 
+        <div class="pop_up" id="pop_up2">
+            <!-- POP-UP CABECALHO -->
+            <header class="up_header">
+                <img class="imgp" src="img/logo-detetive.png" alt="">
+                <div class="logo_up"> Desvende o Digito </div>
+                <div><a href="index.html"><img src="img/fechar.png" class="imgp"></a></div>
+            </header>
+    
+        <!--    CONTEUDO POP-UP    -->
+        <div class="area_btn">
+    
+            <div class="msg_pop">
+    
+            <!--    mensagem ACERTOU   -->
+                 <div class="up_ganhou">
+                    
+                    <div class="up_num" id="numero_secreto"> ?</div>
+                    <div class="pont_pop">Pontos</div>
+                    <div class="msg_ganhou">
+                        <img src="img/feliz (2).png" alt="" class="icon_msg">
+                        PARABÉNS! <br> VOCÊ ACERTOU!
+                         <img src="img/vitoria.png" alt="" class="icon_msg">
+                    </div>
+                    <div class="up_box" > <h4>Com </h4><div id="numero_tentativas_end">?</div> <h4>Tentativas </h4></div>
+                </div>   
+                <!--  FIM  mensagem ACERTOU   -->
+                
+                
+                <!-- mensagem PERDEU  -->
+                 <div class="up_perdeu"><img src="" alt="" class="icon_msg">
+                    <div class="up_num" id="numero_secreto2"> ?</div>
+                    <div class="pont_pop">Pontos</div>
+                    <div class="msg_ganhou2">
+                        <img src="img/triste.png" alt="" class="icon_msg">
+                          NÃO FOI <br> DESSA VEZ !
+                         <img src="img/game-over.png" alt="" class="icon_msg">
+                    </div>
+                    <div class="up_box2" > <h5> Voce excedeu o numero de tentativas! </h5></div>
+                </div>
+                <!-- FIM mensagem PERDEU  -->
+                
+            </div>
+    
+            <!-- POP UP BUTÕES -->
+                <div class="button_pop">
+                    <div class="pop_btn">
+                    <a href="index.html">Menu</a>
+                    </div>
+                    <div class="pop_btn">
+                <a href="play.html">jogar novamente</a>  
+                    </div>
+                </div>
+        </div>
+        </div>
+        </div><!--          FIM POP-UP        -->
+
+
+
+
+
+    <div class="setores">
+<!--       CABEÇALHO        -->
+    <header class="header2">
+        <div  id="logo2"> 
+        <div><img class="imgl" src="img/logo-detetive.png" alt=""></div> Desvende <br> o Digito </div>
+    <div class="img" id="img2"><div class="img" id="img2"><img src="img/interrogar.gif" class="img2" alt=""></div></div>
+        <div class="btn-box" id="btnpg2">
+            <a href="tutorial.html" >COMO JOGAR</a> </div>
+    </header> <!--   FIM CABEÇALHO    -->
+
+
+    <div class="containers">
+<!--  PRIMEIRA CAIXA   -->
+        <div class="form1">
+            <div class="form_boxers">
+            <div class="title_form"> <img src="img/livro_detetive.png" alt="" id="iconbox1" class="icon"></div>
+            <div class="box" > <h4>Última Tentativa: </h4><div id="tentativa_num" class="size-plus">?</div></div>
+            <div class="box" > <h4>Número de Tentativas: </h4><div id="numero_tentativas" class="size-plus">?</div></div>
+            <div class="box" > <h4>Tentativas Restantes: </h4><div id="tentativas_restantes" class="size-plus">?</div></div>
+           
+            </div>
+        </div>
+
+<!--  SEGUNDA CAIXA   -->
+        <div class="form2"> 
+            <div class="title_form" id="title_form2"> <img src="img/detetive2.png" alt="" class="icon" id="iconbox2"> <br> Seu palpite: </div> 
+            <div class="palpite"> 
+                <input type="number" autofocus class="text_area">
+                <button class="botao">Enviar</button>
+                <br>
+                
+            </div>
+            <!-- <div class="box"><h3 id="info_meio">CHUTE UM NÚMERO</h3></div> -->
+        </div>
+
+<!--  TERCEIRA CAIXA   -->
+        <div class="form3">
+            <div class="form_boxers">
+                <div class="title_form"> <img src="img/dica.png" class="icon" alt=""  id="iconbox3"> </div>
+                <div class="box" id="div_dica"> <h3 id="dica">FAÇA SUA TENTATIVA</h3> </div>
+                <!-- <div class="box"> <h3> ESTÁ QUENTE!!!  </h3> </div>
+                <div class="box"> <h3> O NÚMERO É MAIOR! </h3></div> -->
+            </div>
+        </div>
+    </div>
+     
+    </div>
+     <script src="script/script.js"></script>
+</body>
+</html>
