@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/games');
+@import url('https://fonts.googleapis.com/css2?&family=Skranji&display=swap');
+:root {
+    --corP: #081b29;
+    --cor2: #00abf0;
+    --fontgame: "Games", sans-serif;
+    --fontlegivel: "Poppins" , sans-serif;
+    --fontStart: "Skranji", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+
+    /* body {
+    background: var(--corP); 
+    color: #ededed;
+}    */
+    body {
+    background-image: url(https://i.pinimg.com/originals/87/99/24/879924d3c8f7970eedd4ae618fe976c0.gif);
+    background-size: cover;
+     color: var(--corP); 
+}   
+.header{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    font-size: 100px;
+    font-weight: 500;
+    font-family: var(--fontgame);
+    letter-spacing: 3px;
+    box-shadow: -9px 10px 14px 0px var(--corP);
+    text-shadow: -7px 12px 4px #c2d3dac1;
+    border-radius: 10px;
+    background-color: #00000050;
+    color: black;
+    width: 700px;
+    height:250px;
+    text-align: center;
+    align-self: center;
+    border: 1px solid var(--cor2);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline; */
+} 
+
+.principal{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.div-meio{
+    /* height: 550px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid wheat;  */
+    height: 400px;
+    flex-direction: column;
+    padding-right: 70px;
+    
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 80px;
+    background: var(--cor2);
+    border: 2px solid #fff; /* <-- */
+    border-radius: 8px;
+    font-size: 19px;
+    color: var(--corP);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.9px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    font-size: 35px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: var(--fontgame);
+}
+/* ANIMAÇÃO BUTÃO: */
+.btn-box a:hover{
+    color: var(--cor2);
+
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--corP);
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+/* </END>  */
+
+.div{
+    display: flex;
+}
+.btn-play {
+    text-decoration: none;
+    /*color: #00abf0;
+    margin-bottom: 100px;
+     margin-left: 18px; */
+    
+} 
+#btn-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+summary{
+    display: flex;
+    justify-content: center;
+}
+summary::marker{
+    content:''; /*não ter a seta*/
+    
+}
+.seta{
+    width: 45px;
+    height: 45px;
+    align-self: center;
+    margin-right: 10px;
+}
+details{
+    display: flex;
+}
+details[open]{
+    display: flex;
+    align-items: end;
+    /* margin-left: 70px;*/
+} 
+
+li{
+    font-family: var(--fontlegivel) ;
+    list-style-position: inside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.img{
+    width: 40vw;
+}
+
+/*           #ff00ff           -- PAGÍNA DO JOGO --       #ff00ff              */
+/*           #ff00ff           -- PAGÍNA DO JOGO --       #ff00ff              */
+/*           #ff00ff           -- PAGÍNA DO JOGO --       #ff00ff     
+         */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#body2{
+    background-color: var(--corP);
+    background: black;
+}
+.header2{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid var(--cor2);
+    border-radius: 10px;
+    background-color: var(--corP);
+}
+
+#logo2{
+    font-family: var(--fontgame);
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
+.imgl {
+    width: 80px;
+}
+#img2{
+    width: 8vw;
+    margin-right: 60px;
+}
+#btnpg2 a{
+    width: 200px;
+    height: 45px;
+    font-size: 25px;
+}
+.containers{
+    width: 100%;
+    height: 635px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border:1px solid #00abf0; */
+}
+#iconbox1{
+    position: absolute;
+    margin-bottom: 130px;
+}
+#iconbox2 {
+    position: absolute;
+    z-index: 0;
+    margin-bottom: 210px;
+}
+#iconbox3 {
+    position: absolute;
+    margin-bottom: 325px;
+}
+
+
+.form1{
+    width: 25%;
+    height: 420px;
+    border:1px solid #00abf0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corP);
+    transition: background-color .45s;
+
+}
+
+
+#div_dica {
+    transition: transform .45s;
+}
+
+div {
+    transition: transform .45s;
+}
+
+
+
+.form3 {
+    width: 25%;
+    height: 420px;
+    border: 1px solid #00abf0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corP);
+
+}
+.icon{
+    width: 85px;
+}
+.form_boxers{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    font-family: var(--fontgame);
+}
+.title_form{
+    color: #00abf0;
+    border-style: 3px solid #e9ebec;
+    font-family: var(--fontgame);
+    font-size: 37PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 260px;
+    height: 60px;
+    border: 1px solid var(--cor2);
+    border-radius: 20px;
+    color: var(--corP);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-block: 20px;
+    background-color: #f0f0f0;
+    font-size: 35px;
+    box-shadow: -4px 5px 10px 0px var(--cor2);
+}
+.box h4{
+    font-family: var(--fontlegivel);
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 5px;
+    font-size: 15px;
+}
+.box h3 {
+    font-family: var(--fontlegivel);
+    text-align: center;
+    margin-left: 25px;
+    font-size: 20px;
+}
+.form2{
+    width: 35%;
+    height: 550px;
+    border: 1px solid #00abf0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    color: #00abf0;
+    flex-direction: column;
+    background-color: var(--corP);
+    transition: background-color .45s;
+
+}
+.palpite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#title_form2{
+    font-size: 70px;
+    font-family: var(--fontStart);
+    text-shadow: -4px 5px #000000;
+    color: #fff;
+}
+.text_area{
+    width: 200px;
+    height: 150px;
+    font-size: 100px;
+    border-radius: 20px;
+    background: #f0f0f0;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -4px 5px 10px 0px #858585;
+    animation: changecolor 2s ease-in-out infinite;
+    font-family: var(--fontgame);
+    text-align: center;
+}
+
+.text_area{
+    margin-bottom: 60px;
+}
+
+/* BOTÃO ENVIAR  */
+.botao{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 80px;
+    background: var(--cor2);
+    border: 2px solid #fff; /* <-- */
+    border-radius: 8px;
+    font-size: 19px;
+    color: var(--corP);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.9px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    font-size: 35px;
+    text-align: center;
+    line-height: 1.2;
+    cursor: pointer;
+    font-family: var(--fontgame);
+}
+.botao:hover {
+    color: var(--cor2);
+
+}
+.botao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--corP);
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.botao:hover::before {
+    width: 100%;
+}
+
+
+
+#body_popUp {
+    position: relative;
+}
+.pop_up {
+    opacity: 0;
+    z-index: 2;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 750px;
+    height: 600px;
+    border: 1px solid var(--cor2);
+    border-radius: 20px;
+    background-color: var(--corP);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .7s opacity ease-in-out;
+    display: none;
+}
+
+.setores {
+    transition: filter 0.5s ease;
+
+}
+
+.up_header{
+    width: 100%;
+    height: 100px;
+    border: 4px solid var(--cor2);
+    border-radius: 20px 20px 0px 0px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: var(--cor2);
+}
+.logo_up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: var(--fontgame);
+    text-shadow: 1px 2px var(--corP);
+}
+.imgp{
+    width: 70px;
+}
+.area_btn{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.msg_pop{
+    width:100%;
+    /* height: 320px; */
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+/*         #06FF06       POP UP GANHOU        #06FF06   */
+
+
+.up_ganhou{
+    width: 100%;
+   /* height: 320px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+.up_num {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: var(--fontgame);
+    text-shadow: 1px 2px var(--cor2);
+    flex-direction: column;
+} 
+.msg_ganhou{
+    width: 100%;
+    height: 200PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor2);
+    font-size: 55px;
+    font-family: var(--fontStart);
+    text-shadow: 1px 2px white;
+    text-align: center;
+}
+
+.icon_msg {
+    width: 100px;
+}
+.button_pop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--fontgame);
+}
+.up_box{
+    width: 300px;
+    /* height: 100px; */
+    display: flex;
+    font-family: var(--fontStart);
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 2px black;
+}
+.up_box h4 {
+    margin-inline: 10px;
+}
+.pont_pop{
+    font-size: 20px;
+    font-family: var(--fontStart);
+    text-shadow: none;
+}
+
+/*       #0000FF      POP - UP PERDEU      #0000FF  */
+.up_perdeu{
+    width: 100%;
+   /* height: 320px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    display: none;
+
+}
+
+
+
+.msg_ganhou2 {
+    width: 100%;
+    height: 200PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 65px;
+    text-align: center;
+    font-family: var(--fontStart);
+    text-shadow: 1px 2px var(--cor2);
+}
+.up_box2 {
+    width: 100%;
+    /* height: 100px; */
+    display: flex;
+    font-family: var(--fontStart);
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 2px red;
+}
+.up_box h5 {
+    margin-inline: 10px;
+} 
+
+
+
+.pop_btn a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 80px;
+    background: var(--cor2);
+    border: 2px solid #fff;
+    /* <-- */
+    border-radius: 8px;
+    font-size: 19px;
+    color: var(--corP);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.9px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    font-size: 35px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* ANIMAÇÃO BUTÃO: */
+.pop_up a:hover {
+    color: var(--cor2);
+}
+
+.pop_btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--corP);
+    z-index: -1;
+    transition: .5s;
+}
+.pop_btn a:hover::before {
+    width: 100%;
+}
+/*                #909000              FIM   POP-UP                        #909000     */
+/*    </END>     */
+
+/*        #990040                                             #990040 */
+/*        #990040                PAGÍNA COMO JOGAR            #990040 */
+/*        #990040                                             #990040 */
+
+.img2{
+    width: 110px;
+}
+.all_tut{
+    width: 100%;
+    height: 635px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    
+}
+.tut{
+    width: 90%;
+    height: 95%;
+    /* border: 3px dashed var(--cor2); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--corP);
+    border-radius: 10px;
+    box-shadow: -2px 2px 5px var(--cor2);
+
+}
+.title_tut{
+    width: 500px;
+    height: 10%;
+    color: #e9ebec;
+    /* border: 1px dashed #fff; */
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-family: var(--fontgame);
+    box-shadow: -2px 2px 5px var(--cor2);
+}
+.boxers_tut{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box_tut{
+    width: 70%;
+    height: 400px; 
+    color: #ffffff;
+    /* border: 2px dashed var(--cor2); */
+    font-size: 25PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    font-family: var(--fontStart);
+    background-color:var(--corP);
+    border-radius: 20px;
+    /* box-shadow: -2px 2px 5px var(--cor2);  */
+    /* overflow-y: scroll; */
+    flex-direction: column;
+}
+
+.box-tut1{
+    font-size: 20px;
+}
+
+
+
+
+/*           #ff00ff           -- KEYFRAMES --       #ff00ff              */
+@keyframes changecolor {
+    0% {background-color: #00abf0;}
+    50% {background-color: white;}
+    100% {background-color: #00abf0;}
+}
